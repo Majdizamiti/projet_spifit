@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIFIT Fitness Center</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="page_accueil.js"></script>
+
+</head>
+<body>
+
+
+<header id="headerSection">
+    <img src="images/logo.png" alt="SPIFIT Logo">
+    <ul class="main">
+        <li class="itemmain">
+            <a href="#">Home</a>
+        </li>
+        <li class="itemmain">
+            <a href="work.html">Work</a>
+        </li>
+        <li class="itemmain">
+            <a href="store.html">Store</a>
+        </li>
+        <li class="itemmain">
+            <a href="about us.html">About Us</a>
+        </li>
+    </ul>
+</header>
+
+<div class="firstblock">
+    <div class="welcome">Welcome to SPIFIT gym center</div>
+    <div class="paragraph">Revolutionize your <span class="highlight">fitness</span> journey with SPIFIT GYM CENTER</div>
+    <button class="joinnow"><B>Join Now</B></button>
+</div>
+
+<div id="aboutushome" class="aboutushome">
+    <p class="whoarewe">Who are we?</p>
+    <p class="Experiencetheultimatefitness">Experience the ultimate fitness</p>
+    <ul>
+        <li class="goals">Expert coaching and guidance</li>
+        <li class="goals">Wide range of fitness services</li>
+        <li class="goals">Top-notch facilities and equipment</li>
+        <li class="goals">Friendly and welcoming community</li>
+    </ul>
+</div>
+
+<div id="downloadapp" class="downloadapp">
+    <div class="left">
+        <img src="images/playstore.png" alt="Download our app">
+    </div>
+    <div class="right">
+        <h2>Download the app</h2>
+        <p>You are only one click away!</p>
+        <button class="downloadnow" onclick="window.location.href='https://play.google.com/store/games?device=windows&pli=1';">
+            Download Now <i class="fas fa-arrow-down"></i>
+        </button>
+    </div>
+</div>
+
+<div id="calculation" class="calculation">
+    <div class="form-container">
+        <form>
+            <div class="form-group">
+                <label for="size">Size (cm):</label>
+                <input type="number" id="size">
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight">
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age">
+            </div>
+            <div class="gender form-group">
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="man"> Man</label>
+                <label><input type="radio" name="gender" value="woman"> Woman</label>
+            </div>
+            <div class="activity form-group">
+                <label>Activity factor:</label>
+                <label><input type="radio" name="activity" value="lose_weight"> Lose Weight</label>
+                <label><input type="radio" name="activity" value="gain_muscle"> Gain Muscle</label>
+            </div>
+            <button>Calculate <i class="fas fa-calculator"></i></button>
+        </form>
+    </div>
+    <div class="image-container">
+        <img src="images/imgcalculate.png" alt="Fitness calculation">
+    </div>
+</div>
+
+<div class="connect">
+    <div>
+        <p>let's connect</p>
+        <p>Contact us today to schedule a consultation or tour our facilities.</p>
+        <div class="socialmedia-image">
+            <img src="images/facebook.png" alt="Facebook">
+            <img src="images/instagram.png" alt="Instagram">
+            <img src="images/linkedin.png" alt="LinkedIn">
+            <img src="images/twiter.png" alt="Twitter">
+        </div>
+        <p>Elevate your fitness journey with SPIFIT GYM CENTER</p>
+    </div>
+</div>
+
+<footer>
+    <img src="images/logo.png" alt="SPIFIT Logo">
+    <ul>
+        <li><a href="#headerSection">Home</a></li>
+        <li><a href="#aboutushome">About Us</a></li>
+        <li><a href="#downloadapp">Our App</a></li>
+        <li><a href="#calculation">Calculate</a></li>
+    </ul>
+</footer>
+</body>
+</html>

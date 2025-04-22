@@ -1,0 +1,317 @@
+:root {
+    --primary: #BE2231;
+    --secondary: #1A1A1A;
+    --accent: #FFD700;
+    --light: #FFFFFF;
+    --dark: #121212;
+    --gray: #F5F5F5;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(26, 26, 26, 0.9);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+header img {
+    height: 50px;
+    transition: var(--transition);
+}
+
+.main {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.itemmain a {
+    color: var(--light);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: var(--transition);
+    position: relative;
+    padding: 5px 0;
+}
+
+.itemmain a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: var(--transition);
+}
+
+.itemmain a:hover::after {
+    width: 100%;
+}
+
+.itemmain a:hover {
+    color: var(--primary);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #1A1A1A;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-text a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #BE2231;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero-text a:hover {
+    background-color: #9a1a26;
+}
+
+/* Product Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #1A1A1A;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #BE2231;
+    margin: 15px auto;
+}
+
+.products, .categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product, .category {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 300px;
+}
+
+.product:hover, .category:hover {
+    transform: translateY(-10px);
+}
+
+.product img, .category img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.product p, .category p {
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1A1A1A;
+    color: white;
+    padding: 50px 0;
+}
+
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-info h1 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #ccc;
+    font-size: 1.1rem;
+}
+
+.social-icons {
+    margin: 30px 0;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 0 15px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subscribe-form input[type="email"] {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.subscribe-form button {
+    padding: 12px 25px;
+    background-color: #BE2231;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #9a1a26;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #headerSection {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .main {
+        margin-top: 20px;
+    }
+
+    .itemmain {
+        margin: 0 15px;
+    }
+
+    .hero-text {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    .products, .categories {
+        gap: 20px;
+    }
+
+    .product, .category {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-form input[type="email"] {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .subscribe-form button {
+        border-radius: 5px;
+        width: 100%;
+    }
+}
