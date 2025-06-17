@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIFIT Fitness Center</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header id="headerSection">
+    <img src="../images/logo.png" alt="SPIFIT Logo" id="logo">
+    <ul class="main">
+        <li class="itemmain"><a href="#">Home</a></li>
+        <li class="itemmain"><a href="work.html">Work</a></li>
+        <li class="itemmain"><a href="store.html">Store</a></li>
+        <li class="itemmain"><a href="about us.html">About Us</a></li>
+    </ul>
+
+    <div class="profile-dropdown" id="profileDropdown">
+        <div class="profile-icon">
+            <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="dropdown-content">
+            <a href="profile.php"><i class="fas fa-user"></i> Profile</a>
+            <a href="logout.php" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+    </div>
+</header>
+
+<div class="firstblock">
+    <div class="welcome">Welcome to SPIFIT gym center</div>
+    <div class="paragraph">Revolutionize your <span class="highlight">fitness</span> journey with SPIFIT GYM CENTER</div>
+    <button class="joinnow" id="joinNowBtn"><B>Join Now</B></button>
+</div>
+
+<div id="aboutushome" class="aboutushome">
+    <p class="whoarewe">Who are we?</p>
+    <p class="Experiencetheultimatefitness">Experience the ultimate fitness</p>
+    <ul>
+        <li class="goals">Expert coaching and guidance</li>
+        <li class="goals">Wide range of fitness services</li>
+        <li class="goals">Top-notch facilities and equipment</li>
+        <li class="goals">Friendly and welcoming community</li>
+    </ul>
+</div>
+
+<div id="downloadapp" class="downloadapp">
+    <div class="left">
+        <img src="../images/playstore.png" alt="Download our app" id="playstoreImg">
+    </div>
+    <div class="right">
+        <h2>Download the app</h2>
+        <p>You are only one click away!</p>
+        <button class="downloadnow" id="downloadBtn">
+            Download Now <i class="fas fa-arrow-down"></i>
+        </button>
+    </div>
+</div>
+
+<div id="calculation" class="calculation">
+    <div class="form-container">
+        <h2>Calculate Your Fitness</h2>
+        <form id="fitnessForm" action="calculate.php" method="POST">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <br>
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" step="0.1" required>
+            <br>
+            <label for="size">Size (cm):</label>
+            <input type="number" id="size" name="size" required>
+            <br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="man">Man</option>
+                <option value="woman">Woman</option>
+            </select>
+            <br>
+            <label for="activity">Activity Factor:</label>
+            <select id="activity" name="activity" required>
+                <option value="lose">Lose Weight</option>
+                <option value="gain">Gain Weight</option>
+            </select>
+            <br>
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+    <div class="image-container">
+        <img src="../images/calculate.png" alt="Fitness calculation" id="calculateImg">
+    </div>
+</div>
+
+<div class="connect">
+    <div>
+        <p>let's connect</p>
+        <p>Contact us today to schedule a consultation or tour our facilities.</p>
+        <div class="socialmedia-image">
+            <img src="../images/facebook.png" alt="Facebook" class="social-icon">
+            <img src="../images/instagram.png" alt="Instagram" class="social-icon">
+            <img src="../images/linkedin.png" alt="LinkedIn" class="social-icon">
+            <img src="../images/twitter.png" alt="Twitter" class="social-icon">
+        </div>
+        <p>Elevate your fitness journey with SPIFIT GYM CENTER</p>
+    </div>
+</div>
+
+<footer>
+    <img src="../images/logo.png" alt="SPIFIT Logo" id="footerLogo">
+    <ul>
+        <li><a href="#headerSection">Home</a></li>
+        <li><a href="#aboutushome">About Us</a></li>
+        <li><a href="#downloadapp">Our App</a></li>
+        <li><a href="#calculation">Calculate</a></li>
+    </ul>
+</footer>
+
+<script src="../js/page_accueil.js" defer></script>
+
+<style>
+    .profile-dropdown {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .profile-icon {
+        font-size: 28px;
+        color: white;
+        transition: color 0.3s;
+    }
+
+    .profile-icon:hover {
+        color: #BE2231;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: rgba(26, 26, 26, 0.95);
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .profile-dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #BE2231;
+    }
+
+    .dropdown-content a i {
+        margin-right: 8px;
+        width: 20px;
+        text-align: center;
+    }
+
+    .logout-btn {
+        color: #ff4444 !important;
+    }
+
+    .logout-btn:hover {
+        background-color: #ff4444 !important;
+        color: white !important;
+    }
+</style>
+</body>
+</html>

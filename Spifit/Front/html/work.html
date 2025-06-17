@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work - SPIFIT GYM CENTER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/stylework.css">
+</head>
+<body>
+<header id="headerSection">
+    <img src="../images/logo.png" alt="SPIFIT Logo">
+    <ul class="main">
+        <li class="itemmain">
+            <a href="page_accueil.html">Home</a>
+        </li>
+        <li class="itemmain">
+            <a href="#">Work</a>
+        </li>
+        <li class="itemmain">
+            <a href="store.html">Store</a>
+        </li>
+        <li class="itemmain">
+            <a href="about%20us.html">About Us</a>
+        </li>
+    </ul>
+    <!-- Updated profile dropdown section -->
+    <div class="profile-dropdown">
+        <div class="profile-icon">
+            <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="dropdown-content">
+            <a href="profile.php"><i class="fas fa-user"></i> Profile</a>
+            <a href="logout.php" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+    </div>
+</header>
+
+<style>
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.profile-icon {
+    font-size: 28px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.profile-icon:hover {
+    color: #BE2231;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(26, 26, 26, 0.95);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #BE2231;
+}
+
+.dropdown-content a i {
+    margin-right: 8px;
+    width: 20px;
+    text-align: center;
+}
+
+.logout-btn {
+    color: #ff4444 !important;
+}
+
+.logout-btn:hover {
+    background-color: #ff4444 !important;
+    color: white !important;
+}
+</style>
+
+<container>
+    <div class="activities">
+        <div class="left">
+            <h2>Sort by :</h2>
+            <label>Service</label>
+            <select>
+                <option value>Select Service</option>
+                <option value="musculation">Musculation</option>
+                <option value="calisthenics">Calisthenics</option>
+                <option value="Fitness">Fitness</option>
+                <option value="Cardio">Cardio</option>
+                <option value="YOGA">YOGA</option>
+                <option value="Boxing">Boxing</option>
+                <option value="Jiu-Jitsu">Jiu-Jitsu</option>
+                <option value="kung-fu">Kung-Fu</option>
+                <option value="Gymnastics Kids">Gymnastics Kids</option>
+            </select>
+            <br>
+            <label>Objectives</label>
+            <select>
+                <option value>Select Objective</option>
+                <option value="weight_loss">Weight Loss</option>
+                <option value="muscle_gain">Muscle Gain</option>
+                <option value="endurance">Endurance</option>
+                <option value="flexibility">Flexibility</option>
+                <option value="stress_relief">Stress Relief</option>
+                <option value="skill_improvement">Skill Improvement</option>
+                <option value="general_fitness">General Fitness</option>
+                <option value="rehabilitation">Rehabilitation</option>
+            </select>
+            <br>
+            <label>For Who</label>
+            <select>
+                <option value>Select Category</option>
+                <option value="beginners">Beginners</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+                <option value="kids">Kids</option>
+                <option value="adults">Adults</option>
+                <option value="seniors">Seniors</option>
+                <option value="athletes">Athletes</option>
+                <option value="pregnant_women">Pregnant Women</option>
+            </select>
+            <br>
+            <button>Filter <i class="fas fa-filter"></i></button>
+        </div>
+        <div class="right">
+            <div class="card">
+                <img src="../images/musculation.png" alt="Musculation">
+                <p>Musculation</p>
+            </div>
+            <div class="card">
+                <img src="../images/calisthenics.png" alt="Calisthenics">
+                <p>Calisthenics</p>
+            </div>
+            <div class="card">
+                <img src="../images/yoga.png" alt="Yoga">
+                <p>YOGA</p>
+            </div>
+            <div class="card">
+                <img src="../images/aerobic.png" alt="Aerobic">
+                <p>Aerobic</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="coach" id="coach">
+        <h1>Our Coaches</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="../images/coach%20fitness.png" alt="Coach Fitness">
+                <p>Coach Fitness</p>
+            </div>
+            <div class="card">
+                <img src="../images/martial%20art.png" alt="Martial Art Coach">
+                <p>Martial Art</p>
+            </div>
+            <div class="card">
+                <img src="../images/personal%20trainer.png" alt="Personal Trainer">
+                <p>Personal Trainer</p>
+            </div>
+            <div class="card">
+                <img src="../images/nutrition.png" alt="Nutrition Coach">
+                <p>Nutrition</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <h1>Our Services</h1>
+        <p>Welcome to SPIFIT GYM CENTER, where we help you achieve your fitness goals with top-notch personal training, group fitness, and martial arts programs.</p>
+        <div>
+            <div class="left">
+                <img src="../images/services.png" alt="Our Services">
+            </div>
+            <div class="right">
+                <h4>Our Solution</h4>
+                <h2>Transform Your Body, Transform Your Life</h2>
+                <p>At SPIFIT GYM CENTER, we offer a wide range of services to help you improve your physical fitness and overall health. Our expert coaches and trainers will guide you on your fitness journey, whether you're looking to build muscle, lose weight, or learn self-defense.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="nutrition">
+        <h1>Nutrition</h1>
+        <div>
+            <div class="left">
+                <img src="../images/nutrition1.png" alt="Nutrition Services">
+            </div>
+            <div class="right">
+                <p>You have a goal and you are struggling to achieve it! You want to lose weight or simply take care of your physical health! SPIFIT nutritionists are here to meet all your needs. Having a variety of foods, eating balanced meals combined with exercise is recommended for a healthy lifestyle. Our team of nutrition experts will support you from diagnosis to the adoption of an adequate nutritional plan.</p>
+                <button>Go To Store <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="imgnutrition">
+            <img src="../images/nutrition2.png" alt="Nutrition Plan">
+            <img src="../images/nutrition3.png" alt="Healthy Food">
+            <img src="../images/nutrition4.png" alt="Nutrition Consultation">
+        </div>
+    </div>
+</container>
+
+<footer>
+    <img src="../images/logo.png" alt="SPIFIT Logo">
+    <ul>
+        <li><a href="#headerSection">Activity</a></li>
+        <li><a href="#coach">Coach</a></li>
+        <li><a href="#services">Our Services</a></li>
+    </ul>
+</footer>
+</body>
+</html>

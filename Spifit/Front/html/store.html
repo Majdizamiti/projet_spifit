@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="../css/storecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header id="headerSection">
+    <img src="../images/logo.png" alt="SPIFIT Logo">
+    <ul class="main">
+        <li class="itemmain">
+            <a href="page_accueil.html">Home</a>
+        </li>
+        <li class="itemmain">
+            <a href="work.html">Work</a>
+        </li>
+        <li class="itemmain">
+            <a href="#">Store</a>
+        </li>
+        <li class="itemmain">
+            <a href="about%20us.html">About Us</a>
+        </li>
+    </ul>
+    <!-- Updated profile dropdown section -->
+    <div class="profile-dropdown">
+        <div class="profile-icon">
+            <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="dropdown-content">
+            <a href="profile.php"><i class="fas fa-user"></i> Profile</a>
+            <a href="logout.php" class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+    </div>
+    <!-- Add this in the header section, next to the profile dropdown -->
+    <div class="cart-icon">
+        <a href="cart.php">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </a>
+    </div>
+</header>
+
+<style>
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.profile-icon {
+    font-size: 28px;
+    color: white;
+    transition: color 0.3s;
+}
+
+.profile-icon:hover {
+    color: #BE2231;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(26, 26, 26, 0.95);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #BE2231;
+}
+
+.dropdown-content a i {
+    margin-right: 8px;
+    width: 20px;
+    text-align: center;
+}
+
+.logout-btn {
+    color: #ff4444 !important;
+}
+
+.logout-btn:hover {
+    background-color: #ff4444 !important;
+    color: white !important;
+}
+</style>
+
+<div class="hero">
+    <img src="../images/Rectangle%20305.png" alt="Sportswear Collection">
+    <div class="hero-text">
+        <h1>Active Style with Our Latest Sportswear Collection</h1>
+        <p>Discover the latest collection that combines trendy design with optimal performance for every sporting activity.</p>
+        <a href="#">Shop Now</a>
+    </div>
+</div>
+
+<main>
+    <section class="new-arrival">
+        <h2>New Arrival</h2>
+        <div class="products">
+            <div class="product">
+                <img src="../images/Rectangle%20310.png" alt="Sport T-shirt" width="295" height="250">
+                <p>Sport T-shirt - 30Dt</p>
+                <button class="add-to-cart" data-product-id="1" data-product-name="Sport T-shirt" data-product-price="30">
+                    Add to Cart <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+            <div class="product">
+                <img src="../images/Rectangle%20310%20(1).png" height="250" width="295"/>
+                <p>Stringer Cutoffshirt - 30Dt</p>
+                <button class="add-to-cart" data-product-id="2" data-product-name="Sport T-shirt" data-product-price="30">
+                    Add to Cart <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+            <div class="product">
+
+                <img src="../images/Rectangle%20310%20(2).png" height="250" width="295"/>
+                <p>Jacket - 30Dt</p>
+                <button class="add-to-cart" data-product-id="3" data-product-name="Sport T-shirt" data-product-price="30">
+                    Add to Cart <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+            <div class="product">
+
+                <img src="../images/Rectangle%20310%20(3).png" height="250" width="295"/>
+                <p>Backpack - 30Dt</p>
+                <button class="add-to-cart" data-product-id="4" data-product-name="Sport T-shirt" data-product-price="30">
+                    Add to Cart <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="collection">
+        <h2>Our Varied Collection</h2>
+        <div class="categories">
+            <div class="category">
+                <img src="../images/Rectangle%20310%20(2).png" height="250" width="295"/>
+                <p>Jackets - 130Dt</p>
+                <button class="add-to-cart" data-product-id="5" data-product-name="Sport T-shirt" data-product-price="30">
+                    Add to Cart <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+            <div class="category">
+                <img src="../images/Rectangle%20312.png" height="299" width="295"/>
+                <p>Shorts - 30Dt</p>
+                <button class="add-to-cart" data-product-id="6" data-product-name="Sport T-shirt" data-product-price="30">
+                    Add to Cart <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+            <div class="category">
+
+                <img src="../images/Rectangle%20314.png" height="299" width="295"/>
+                <p>Leggings - 30Dt</p>
+                <button class="add-to-cart" data-product-id="7" data-product-name="Sport T-shirt" data-product-price="30">
+                    Add to Cart <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+            <div class="category">
+
+                <img src="../images/Rectangle%20316.png" height="299" width="295"/>
+                <p>Stringers - 30Dt</p>
+                <button class="add-to-cart" data-product-id="8" data-product-name="Sport T-shirt" data-product-price="30">
+                    Add to Cart <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="nutrition">
+        <h2>Nutrition & Products</h2>
+        <div class="products">
+            <div class="product">
+
+                <img src="../images/Rectangle%20318%20(2).png" height="299" width="295"/>
+                <p>Protein - 130Dt</p>
+                <button class="add-to-cart" data-product-id="9" data-product-name="Sport T-shirt" data-product-price="30">
+                    Add to Cart <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+            <div class="product">
+
+                <img src="../images/Rectangle%20319%20(2).png" height="299" width="295"/>
+                <p>Mass - 230Dt</p>
+                <button class="add-to-cart" data-product-id="10" data-product-name="Sport T-shirt" data-product-price="30">
+                    Add to Cart <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+            <div class="product">
+
+                <img src="../images/Rectangle%20320%20(2).png" height="299" width="295"/>
+                <p>Creatine - 120Dt</p>
+                <button class="add-to-cart" data-product-id="11" data-product-name="Sport T-shirt" data-product-price="30">
+                    Add to Cart <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+            <div class="product">
+
+                <img src="../images/Rectangle%20321%20(1).png" height="299" width="295"/>
+                <p>KL - 30Dt</p>
+                <button class="add-to-cart" data-product-id="12" data-product-name="Sport T-shirt" data-product-price="30">
+                    Add to Cart <i class="fas fa-cart-plus"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="accessories">
+        <h2>Accessories</h2>
+        <div class="products">
+            <div class="product">
+
+                <img src="../images/Rectangle%20318.png" height="299" width="295"/>
+                <p>Dumbbells</p>
+            </div>
+            <div class="product">
+
+                <img src="../images/Rectangle%20319.png" height="299" width="295"/>
+                <p>Wristbands</p>
+            </div>
+            <div class="product">
+                <img src="../images/Rectangle%20320.png" height="299" width="295"/>
+                <p>Gloves</p>
+            </div>
+            <div class="product">
+                <img src="../images/Rectangle%20321.png" height="299" width="295"/>
+                <p>Bottle Shakers</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h1>Contact us today to schedule a consultation or tour our facilities.</h1>
+                <p>Elevate your fitness journey with <strong>SPIFIT GYM CENTER</strong></p>
+            </div>
+            <div class="social-icons">
+                <img src="https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg" alt="Facebook">
+                <img src="https://www.logo.wine/a/logo/Instagram/Instagram-Logo.wine.svg" alt="Instagram">
+                <img src="https://www.logo.wine/a/logo/LinkedIn/LinkedIn-Logo.wine.svg" alt="LinkedIn">
+                <img src="https://www.logo.wine/a/logo/Twitter/Twitter-Logo.wine.svg" alt="Twitter">
+            </div>
+            <div class="subscribe-form">
+                <input type="email" placeholder="Enter your email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Add this before the closing </body> tag -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add to cart functionality
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', async function() {
+            const productId = this.dataset.productId;
+            const productName = this.dataset.productName;
+            const productPrice = this.dataset.productPrice;
+            
+            try {
+                const response = await fetch('add_to_cart.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        product_id: productId,
+                        quantity: 1
+                    })
+                });
+                
+                const data = await response.json();
+                if (data.success) {
+                    updateCartCount(data.cart_count);
+                    alert('Product added to cart!');
+                } else {
+                    alert(data.message || 'Error adding product to cart');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error adding product to cart');
+            }
+        });
+    });
+
+    // Update cart count
+    function updateCartCount(count) {
+        const cartCount = document.querySelector('.cart-count');
+        cartCount.textContent = count;
+    }
+
+    // Initial cart count load
+    fetch('get_cart_count.php')
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                updateCartCount(data.count);
+            }
+        })
+        .catch(error => console.error('Error:', error));
+});
+</script>
+</body>
+</html>
