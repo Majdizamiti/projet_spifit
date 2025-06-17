@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS calculations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    age INT NOT NULL,
+    weight FLOAT NOT NULL,
+    size INT NOT NULL,
+    gender VARCHAR(10) NOT NULL,
+    activity VARCHAR(20) NOT NULL,
+    bmi FLOAT NOT NULL,
+    result TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+); 

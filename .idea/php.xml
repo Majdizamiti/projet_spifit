@@ -2,14 +2,14 @@
 <project version="4">
   <component name="LaravelPint">
     <laravel_pint_settings>
-      <laravel_pint_by_interpreter asDefaultInterpreter="true" interpreter_id="4fb4877a-f860-42e2-96af-bec99200bde4">
+      <laravel_pint_by_interpreter asDefaultInterpreter="true" interpreter_id="5952a1b5-f61c-4a8c-8fbe-25fa08452468">
         <option name="timeout" value="30000" />
       </laravel_pint_by_interpreter>
     </laravel_pint_settings>
   </component>
   <component name="MessDetector">
     <phpmd_settings>
-      <phpmd_by_interpreter asDefaultInterpreter="true" interpreter_id="4fb4877a-f860-42e2-96af-bec99200bde4" timeout="30000" />
+      <phpmd_by_interpreter asDefaultInterpreter="true" interpreter_id="5952a1b5-f61c-4a8c-8fbe-25fa08452468" timeout="30000" />
     </phpmd_settings>
   </component>
   <component name="MessDetectorOptionsConfiguration">
@@ -24,18 +24,18 @@
   </component>
   <component name="PhpCSFixer">
     <phpcsfixer_settings>
-      <phpcs_fixer_by_interpreter asDefaultInterpreter="true" interpreter_id="4fb4877a-f860-42e2-96af-bec99200bde4" timeout="30000" />
+      <phpcs_fixer_by_interpreter asDefaultInterpreter="true" interpreter_id="5952a1b5-f61c-4a8c-8fbe-25fa08452468" timeout="30000" />
     </phpcsfixer_settings>
   </component>
   <component name="PhpCodeSniffer">
     <phpcs_settings>
-      <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="4fb4877a-f860-42e2-96af-bec99200bde4" timeout="30000" />
+      <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="5952a1b5-f61c-4a8c-8fbe-25fa08452468" timeout="30000" />
     </phpcs_settings>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="8.4" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.3" />
   <component name="PhpStan">
     <PhpStan_settings>
-      <phpstan_by_interpreter asDefaultInterpreter="true" interpreter_id="4fb4877a-f860-42e2-96af-bec99200bde4" timeout="60000" />
+      <phpstan_by_interpreter asDefaultInterpreter="true" interpreter_id="5952a1b5-f61c-4a8c-8fbe-25fa08452468" timeout="60000" />
     </PhpStan_settings>
   </component>
   <component name="PhpStanOptionsConfiguration">
@@ -43,7 +43,7 @@
   </component>
   <component name="Psalm">
     <Psalm_settings>
-      <psalm_fixer_by_interpreter asDefaultInterpreter="true" interpreter_id="4fb4877a-f860-42e2-96af-bec99200bde4" timeout="60000" />
+      <psalm_fixer_by_interpreter asDefaultInterpreter="true" interpreter_id="5952a1b5-f61c-4a8c-8fbe-25fa08452468" timeout="60000" />
     </Psalm_settings>
   </component>
   <component name="PsalmOptionsConfiguration">
